@@ -1,10 +1,11 @@
 import Users from './components/Users';
+import { UsersProvider } from './components/UsersContext';
 
 function App() {
   return (
-    <div className='App'>
+    <UsersProvider>
       <Users />
-    </div>
+    </UsersProvider>
   );
 }
 
